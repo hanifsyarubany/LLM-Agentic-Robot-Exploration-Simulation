@@ -47,17 +47,6 @@
   <node pkg="local_costmap_generator" type="heightmap_costmap_node" name="heightmap_costmap_node" output="screen">
   </node>
 
-  <!-- YOLO11 Detector without DEPTHS
-  <node pkg="yolo11_detector"
-        type="yolo11_node.py"
-        name="yolo11_node"
-        output="screen">
-      <param name="image_topic" value="/camera/color/image_raw"/>
-      <param name="conf_thres"  value="0.3"/>
-      <param name="device"      value="cuda:0"/>
-      <param name="model_path" value="$(find yolo11_detector)/models/hw5_training_apriltag_v3.pt"/>
-</node> -->
-
  <!-- Nodelet -->
   <node pkg="nodelet" type="nodelet" name="depth_to_rgb" args="standalone depth_image_proc/register">
     <remap from="depth/image_rect"       to="/camera/depth/image_raw"/>
