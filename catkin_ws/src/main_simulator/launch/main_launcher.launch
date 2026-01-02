@@ -58,7 +58,8 @@
     <remap from="registered/image_rect"  to="/camera/depth_registered/image_raw"/>
     <remap from="registered/camera_info" to="/camera/depth_registered/camera_info"/>
   </node>
-  
+
+  <!-- YOLO -->
   <node pkg="yolo11_detector"
         type="yolo11_3D_ros_node.py"
         name="yolo11_depth_node"
