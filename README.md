@@ -17,6 +17,8 @@ This project runs as a **two-launch setup** inside the **catkin workspace**:
 ### Terminal 1 — Launch the Gazebo Simulator (main_simulator)
 ```bash
 cd catkin_ws
+rm -rf build devel
+catkin_make
 source devel/setup.bash
 roslaunch main_simulator main_launcher.launch
 ```
