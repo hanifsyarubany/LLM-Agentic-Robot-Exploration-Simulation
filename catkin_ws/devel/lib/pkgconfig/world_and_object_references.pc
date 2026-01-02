@@ -1,0 +1,8 @@
+prefix=/home/hanif/Hanif-Workspace/Homework_5/catkin_ws/devel
+
+Name: world_and_object_references
+Description: Description of world_and_object_references
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

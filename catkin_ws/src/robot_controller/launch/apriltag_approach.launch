@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Basic topics -->
+  <arg name="tag_topic"        default="/tag_detections"/>
+  <arg name="cmd_vel_topic"    default="/cmd_vel"/>
+
+  <!-- Target relative pose -->
+  <arg name="target_distance"  default="0.58"/>   <!-- desired z distance to tag [m] -->
+  <arg name="target_id"        default="-1"/>     <!-- -1: follow any tag, else specific ID -->
+  <arg name="advance_distance" default= "1.0"/>
+  <arg name="advance_speed"    default="0.45"/>
+
+  <!-- Gains -->
+  <arg name="k_side"           default="0.8"/>    <!-- lateral control (x) -->
+  <arg name="k_forward"        default="0.8"/>    <!-- forward control (z) -->
+  <arg name="k_yaw"            default="3.2"/>    <!-- rotation control (orientation.z) -->
+
+  <!-- Velocity limits -->
+  <arg name="max_side_vel"     default="0.75"/>   <!-- m/s -->
+  <arg name="max_forward_vel"  default="0.60"/>   <!-- m/s -->
+  <arg name="max_yaw_vel"      default="0.10"/>   <!-- rad/s -->
+
+  <!-- Tolerances / deadbands -->
+  <arg name="tol_x"            default="0.04"/>   <!-- m, sideways alignment -->
+  <arg name="tol_z"            default="0.05"/>   <!-- m, distance alignment -->
+  <arg name="tol_yaw"          default="0.02"/>   <!-- unitless, orientation.z -->
+
+  <!-- Misc -->
+  <arg name="timeout"          default="0.5"/>    <!-- s, lose tag after this -->
+  <arg name="control_rate"     default="20.0"/>   <!-- Hz -->
+
+  <!-- Node -->
+  <node pkg="robot_controller"
+        type="apriltag_approaching.py"
+        name="apriltag_approach_node"
+        output="screen">
+
+    <!-- Topics -->
+    <param name="tag_topic"        value="$(arg tag_topic)"/>
+    <param name="cmd_vel_topic"    value="$(arg cmd_vel_topic)"/>
+
+    <!-- Target pose -->
+    <param name="target_distance"  value="$(arg target_distance)"/>
+    <param name="target_id"        value="$(arg target_id)"/>
+    <param name="advance_distance" value="$(arg advance_distance)"/>
+    <param name="advance_speed"    value="$(arg advance_speed)"/>
+
+    <!-- Gains -->
+    <param name="k_side"           value="$(arg k_side)"/>
+    <param name="k_forward"        value="$(arg k_forward)"/>
+    <param name="k_yaw"            value="$(arg k_yaw)"/>
+
+    <!-- Velocity limits -->
+    <param name="max_side_vel"     value="$(arg max_side_vel)"/>
+    <param name="max_forward_vel"  value="$(arg max_forward_vel)"/>
+    <param name="max_yaw_vel"      value="$(arg max_yaw_vel)"/>
+
+    <!-- Tolerances -->
+    <param name="tol_x"            value="$(arg tol_x)"/>
+    <param name="tol_z"            value="$(arg tol_z)"/>
+    <param name="tol_yaw"          value="$(arg tol_yaw)"/>
+
+    <!-- Misc -->
+    <param name="timeout"          value="$(arg timeout)"/>
+    <param name="control_rate"     value="$(arg control_rate)"/>
+
+  </node>
+
+</launch>

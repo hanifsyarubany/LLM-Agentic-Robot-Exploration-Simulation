@@ -1,0 +1,41 @@
+# config/dwa_local_planner_params.yaml
+
+DWAPlannerROS:
+  # Robot kinematics (sesuaikan dengan Nexus, ini starting point)
+  max_vel_x: 0.4
+  min_vel_x: 0.0
+  max_vel_y: 0.0
+  min_vel_y: 0.0
+  max_vel_theta: 1.5
+  min_vel_theta: -1.5
+
+  acc_lim_x: 1.0
+  acc_lim_y: 0.0
+  acc_lim_theta: 2.0
+
+  # Goal tolerance
+  xy_goal_tolerance: 0.15
+  yaw_goal_tolerance: 0.2
+  latch_xy_goal_tolerance: true
+
+  # Sampling & sim
+  sim_time: 2.0
+  vx_samples: 20
+  vtheta_samples: 40
+  sim_granularity: 0.05
+
+  # Cost function weights
+  path_distance_bias: 32.0   # seberapa kuat dia mengikuti global path
+  goal_distance_bias: 24.0   # seberapa keras ngejar goal
+  occdist_scale: 0.02        # seberapa takut sama obstacle
+
+  forward_point_distance: 0.3
+  stop_time_buffer: 0.2
+  scaling_speed: 0.25
+  max_scaling_factor: 0.2
+
+  oscillation_reset_dist: 0.5
+  prune_plan: true
+
+  # Frame
+  global_frame_id: odom

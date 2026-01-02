@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="robot_controller" type="object_pickup_controller.py" name="object_pickup_controller" output="screen">
+    <param name="gate_topic" value="/activate_object_pickup"/>
+    <param name="costmap_topic" value="/map/local_map/obstacle"/>
+    <param name="cmd_vel_topic" value="/cmd_vel"/>
+    <param name="rotate_degrees" value="220.0"/>
+    <param name="forward_speed" value="0.3"/>
+    <param name="rotate_speed" value="0.6"/>
+    <param name="publish_hz" value="20"/>
+  </node>
+</launch>

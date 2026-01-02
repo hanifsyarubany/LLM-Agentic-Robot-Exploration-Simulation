@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>robot_navigation</name>
+  <version>0.0.1</version>
+  <description>
+    Navigation and frontier exploration for my Gazebo robot using explore_lite,
+    move_base, and a custom local costmap from heightmap.cpp / heightmap_to_costmap.cpp.
+  </description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Core ROS + msgs -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf2_ros</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <!-- Navigation stack + frontier exploration -->
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>costmap_2d</exec_depend>
+  <exec_depend>explore_lite</exec_depend>
+
+  <!-- Add extra deps your heightmap nodes use, e.g.: -->
+  <!-- <build_depend>pcl_ros</build_depend> -->
+  <!-- <exec_depend>pcl_ros</exec_depend> -->
+
+  <export>
+    <!-- No specific export tags needed -->
+  </export>
+</package>

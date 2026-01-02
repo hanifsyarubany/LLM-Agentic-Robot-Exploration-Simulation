@@ -1,0 +1,8 @@
+prefix=/home/hanif/Hanif-Workspace/Homework_5/catkin_ws/devel
+
+Name: yolo11_detector
+Description: Description of yolo11_detector
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

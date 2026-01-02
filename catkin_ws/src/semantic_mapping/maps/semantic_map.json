@@ -1,0 +1,193 @@
+[
+  {
+    "name": "junction_1",
+    "poi_pairs": [
+      "left --- convenience_store",
+      "right --- pharmacy"
+    ],
+    "created_at_unix": 1766719743.923226,
+    "robot_pose_2d": {
+      "x": 0.012510634435305281,
+      "y": 0.3058010681384641,
+      "z": 0.0,
+      "yaw": 1.5510477148395008
+    }
+  },
+  {
+    "name": "junction_2",
+    "poi_pairs": [
+      "left --- hamburger_store",
+      "right --- pickup"
+    ],
+    "created_at_unix": 1766719769.752114,
+    "robot_pose_2d": {
+      "x": -1.5538256968956705,
+      "y": 0.7702633161085021,
+      "z": 0.0,
+      "yaw": -3.115308673051878
+    }
+  },
+  {
+    "name": "junction_3",
+    "poi_pairs": [
+      "left --- convenience_store"
+    ],
+    "created_at_unix": 1766719795.1600323,
+    "robot_pose_2d": {
+      "x": -2.019918306161179,
+      "y": -2.3060439288141246,
+      "z": 0.0,
+      "yaw": -1.5740093123451753
+    }
+  },
+  {
+    "name": "junction_4",
+    "poi_pairs": [
+      "left --- pharmacy",
+      "straight --- cafe"
+    ],
+    "created_at_unix": 1766719818.0745997,
+    "robot_pose_2d": {
+      "x": -0.44682527663204713,
+      "y": -2.7558242388377687,
+      "z": 0.0,
+      "yaw": -0.015272235353866036
+    }
+  },
+  {
+    "name": "junction_5",
+    "poi_pairs": [
+      "left --- hamburger_store"
+    ],
+    "created_at_unix": 1766719835.6502976,
+    "robot_pose_2d": {
+      "x": 1.55624511875098,
+      "y": -2.7756283737577676,
+      "z": 0.0,
+      "yaw": 0.019788817640485724
+    }
+  },
+  {
+    "name": "junction_6",
+    "poi_pairs": [
+      "left --- pharmacy"
+    ],
+    "created_at_unix": 1766719855.2773566,
+    "robot_pose_2d": {
+      "x": 2.0136175762368387,
+      "y": 0.3072978963933722,
+      "z": 0.0,
+      "yaw": 1.5701278975365993
+    }
+  },
+  {
+    "name": "junction_7",
+    "poi_pairs": [
+      "left --- cafe",
+      "straight --- convenience_store"
+    ],
+    "created_at_unix": 1766719869.527535,
+    "robot_pose_2d": {
+      "x": 0.44308037751201756,
+      "y": 0.7632930829012097,
+      "z": 0.0,
+      "yaw": -3.132797059393479
+    }
+  },
+  {
+    "name": "junction_8",
+    "poi_pairs": [
+      "left --- pickup",
+      "right --- hamburger_store"
+    ],
+    "created_at_unix": 1766719962.7488134,
+    "robot_pose_2d": {
+      "x": 1.5549122272924698,
+      "y": 0.7406205095241079,
+      "z": 0.0,
+      "yaw": 0.0052056353798163365
+    }
+  },
+  {
+    "name": "junction_9",
+    "poi_pairs": [
+      "right --- cafe"
+    ],
+    "created_at_unix": 1766719986.5116665,
+    "robot_pose_2d": {
+      "x": 1.9822323610767751,
+      "y": -2.3051766166445926,
+      "z": 0.0,
+      "yaw": -1.5533313146446939
+    }
+  },
+  {
+    "name": "junction_10",
+    "poi_pairs": [
+      "right --- pharmacy",
+      "straight --- convenience_store"
+    ],
+    "created_at_unix": 1766720010.6073318,
+    "robot_pose_2d": {
+      "x": 0.4458257979094439,
+      "y": -2.7370603498301356,
+      "z": 0.0,
+      "yaw": -3.1341068268001884
+    }
+  },
+  {
+    "name": "junction_11",
+    "poi_pairs": [
+      "right --- hamburger_store"
+    ],
+    "created_at_unix": 1766720021.9597435,
+    "robot_pose_2d": {
+      "x": -1.5579771977290975,
+      "y": -2.73597103209406,
+      "z": 0.0,
+      "yaw": -3.132023367834333
+    }
+  },
+  {
+    "name": "junction_12",
+    "poi_pairs": [
+      "right --- convenience_store",
+      "straight --- pickup"
+    ],
+    "created_at_unix": 1766720041.425655,
+    "robot_pose_2d": {
+      "x": -1.9841306040070326,
+      "y": 0.30954013193861984,
+      "z": 0.0,
+      "yaw": 1.5892644096453377
+    }
+  },
+  {
+    "name": "junction_13",
+    "poi_pairs": [
+      "right --- cafe",
+      "straight --- pharmacy"
+    ],
+    "created_at_unix": 1766720062.725374,
+    "robot_pose_2d": {
+      "x": -0.4484589214307294,
+      "y": 0.7391624624487624,
+      "z": 0.0,
+      "yaw": -0.02458623963906404
+    }
+  },
+  {
+    "name": "junction_14",
+    "poi_pairs": [
+      "right --- pharmacy",
+      "straight --- hamburger_store"
+    ],
+    "created_at_unix": 1766916963.055996,
+    "robot_pose_2d": {
+      "x": 1.9795335955968958,
+      "y": 1.195382248109806,
+      "z": 0.0,
+      "yaw": -1.5416252106722594
+    }
+  }
+]

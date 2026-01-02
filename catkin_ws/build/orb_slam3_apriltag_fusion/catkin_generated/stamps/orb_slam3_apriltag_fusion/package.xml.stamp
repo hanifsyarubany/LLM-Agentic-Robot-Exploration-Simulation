@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>orb_slam3_apriltag_fusion</name>
+  <version>0.0.1</version>
+  <description>Fusion of ORB-SLAM3 and AprilTag localization</description>
+
+  <maintainer email="you@todo.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export/>
+</package>

@@ -1,0 +1,8 @@
+prefix=/home/hanif/Hanif-Workspace/Homework_5/catkin_ws/devel
+
+Name: re540_final_map
+Description: Description of re540_final_map
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

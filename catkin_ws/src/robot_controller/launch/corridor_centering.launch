@@ -1,0 +1,24 @@
+<launch>
+  <node pkg="robot_controller"
+        type="corridor_centering.py"
+        name="corridor_centering"
+        output="screen">
+
+    <param name="map_topic" value="/map/local_map/obstacle" />
+    <param name="cmd_vel_topic" value="/cmd_vel" />
+
+    <!-- Map & detection parameters -->
+    <param name="forward_axis" value="x" />
+    <param name="obstacle_threshold" value="50" />
+
+    <param name="ahead_min_dist" value="0.5" />
+    <param name="ahead_max_dist" value="2.0" />
+    <param name="max_lateral_dist" value="2.0" />
+
+    <!-- Controller -->
+    <param name="center_tolerance" value="0.1" />
+    <param name="k_lateral" value="0.8" />
+    <param name="max_lateral_vel" value="0.3" />
+    <param name="forward_vel" value="0.0" />  <!-- set >0 if you want to creep forward -->
+  </node>
+</launch>

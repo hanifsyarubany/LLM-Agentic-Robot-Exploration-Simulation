@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="robot_controller"
+        type="corridor_aligner_node.py"
+        name="corridor_aligner"
+        output="screen">
+    <param name="map_topic" value="/map/local_map/obstacle" />
+    <param name="cmd_vel_topic" value="/cmd_vel" />
+    <param name="near_band" value="0.2"/>
+    <param name="target_wall_angle" value="1.5708" />  
+    <param name="angle_tolerance" value="0.03" />      
+  </node>
+</launch>
