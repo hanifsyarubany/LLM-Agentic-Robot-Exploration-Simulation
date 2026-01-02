@@ -86,7 +86,7 @@ roslaunch robot_controller main_controller.launch
 - **Fiducials**: `apriltag_ros` (`AprilTagDetectionArray`)
 - **Navigation Safety**: local occupancy grid / costmap → wall-avoid FSM
 - **Controller Orchestration**: ROS topics + finite-state machine gating
-- **(Optional) LLM**: constrained high-level policy over the semantic map
+- **LLM**: constrained high-level policy over the semantic map
 
 ---
 
