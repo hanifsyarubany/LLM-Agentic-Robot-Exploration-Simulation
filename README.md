@@ -6,6 +6,29 @@ A ROS/Gazebo simulation stack for **agentic robot exploration and task execution
 
 ---
 
+## How to Run the Simulation (Required)
+
+This project runs as a **two-launch setup** inside the **catkin workspace**:
+1) **Main simulator**: starts Gazebo world + simulation stack  
+2) **Main controller**: starts the FSM orchestrator and behavior controllers
+
+> Open **two terminals** and run the following **from `catkin_ws/`**.
+
+### Terminal 1 — Launch the Gazebo Simulator (main_simulator)
+```bash
+cd catkin_ws
+source devel/setup.bash
+roslaunch main_simulator main_launcher.launch
+```
+### Terminal 2 — Launch the Main Controller (robot_controller)
+```bash
+cd catkin_ws
+source devel/setup.bash
+roslaunch robot_controller main_controller.launch
+```
+
+---
+
 ## Visual Overview
 
 ### 1) Environment Map Layout
