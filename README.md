@@ -43,11 +43,6 @@ roslaunch robot_controller main_controller.launch
 ![RViz + Gazebo system overview](figures/rviz.png)  
 *Figure: Runtime visualization during exploration. Left: perception streams (e.g., YOLO detections / AprilTag view). Center: RViz semantic-map and trajectory. Bottom-right: Gazebo simulation view.*
 
-> **Note:** Place the three images under `assets/` with the exact filenames above:
-- `assets/map_layout_overview.png`
-- `assets/gazebo_world_overview.png`
-- `assets/rviz_gazebo_overview.png`
-
 ---
 
 ## Key Features
