@@ -162,10 +162,6 @@ catkin_install_python(PROGRAMS
   scripts/robot_movement/corridor_aligner_node.py
   scripts/robot_movement/apriltag_approaching.py
   scripts/robot_movement/main_controller.py
-  scripts/robot_movement/main_controller_v2.py
-  scripts/robot_movement/main_controller_v3.py
-  scripts/robot_movement/main_controller_v4.py
-  scripts/robot_movement/main_controller_v5.py
   scripts/robot_movement/entering_store_node.py
   scripts/robot_movement/pre_entering_node.py
   scripts/robot_movement/object_pickup_controller.py
