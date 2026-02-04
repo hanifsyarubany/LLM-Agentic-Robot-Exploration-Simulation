@@ -106,7 +106,7 @@ pip3 install ultralytics opencv-python
 
 ## Simulation Videos (YouTube)
 
-A short demo video showcasing the end-to-end runtime in Gazebo + RViz (exploration, semantic mapping, and junction decision-making):
+A short demo video showcasing the end-to-end runtime in Gazebo + RViz:
 
 [![LLM-Based Agentic Exploration Demo](figures/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=55ijkGrVtz0)
 
