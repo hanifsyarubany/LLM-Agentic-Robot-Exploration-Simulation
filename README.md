@@ -6,6 +6,7 @@ A ROS/Gazebo simulation stack for **agentic robot exploration and task execution
 
 📝 You can read the full article here:  
 👉 [Arxiv](https://arxiv.org/pdf/2601.00555)
+
 ---
 
 ## How to Run the Simulation (Required)
