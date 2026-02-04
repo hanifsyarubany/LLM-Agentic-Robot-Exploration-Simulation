@@ -100,3 +100,15 @@ Example:
 sudo apt update
 sudo apt install -y python3-pip ros-noetic-apriltag-ros ros-noetic-tf ros-noetic-cv-bridge
 pip3 install ultralytics opencv-python
+```
+
+---
+
+## Simulation Videos (YouTube)
+
+A short demo video showcasing the end-to-end runtime in Gazebo + RViz (exploration, semantic mapping, and junction decision-making):
+
+[![LLM-Based Agentic Exploration Demo](figures/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=55ijkGrVtz0)
+
+- ▶️ Watch on YouTube: https://www.youtube.com/watch?v=55ijkGrVtz0
+
